@@ -3,6 +3,13 @@
   "version": "1.1.2",
   "description": "Javascript API for the MiniSat and MiniCard constraint solvers.",
   "main": "dist/minisolvers.js",
+  "types": "dist/minisolvers.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/minisolvers.d.ts",
+      "default": "./dist/minisolvers.js"
+    }
+  },
   "scripts": {
     "build": "rollup -c",
     "test": "ava"
